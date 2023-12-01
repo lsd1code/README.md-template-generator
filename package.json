@@ -1,0 +1,12 @@
+{
+  "name": "readme.md-generator",
+  "version": "1.0.0",
+  "description": "npm package for creating README.md templates",
+  "main": "index.js",
+  "scripts": {
+    "create": "code README.md"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
