@@ -1,5 +1,5 @@
 {
-  "name": "readme.md-generator",
+  "name": "readme.md-template-generator",
   "version": "1.0.0",
   "description": "npm package for creating README.md templates",
   "main": "index.js",
