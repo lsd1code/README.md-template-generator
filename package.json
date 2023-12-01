@@ -4,7 +4,7 @@
   "description": "npm package for creating README.md templates",
   "main": "index.js",
   "scripts": {
-    "create": "code README.md"
+    "start": "code README.md"
   },
   "keywords": [],
   "author": "",

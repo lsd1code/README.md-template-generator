@@ -1,4 +1,4 @@
-# README.md template generator
+# Project Title
 
 [Short project description and purpose]
 
