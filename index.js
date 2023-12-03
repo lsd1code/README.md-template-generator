@@ -1,39 +1,46 @@
-const { writeFile, readFile, readdir } = require('fs').promises
-const { join } = require('path')
+#!/usr/bin/env node
 
-const successMsg = "README.md file created successfully.\n\nFeel free to customize this template based on your project's specific details and structure. Providing comprehensive information in your README.md will make it easier for others to understand, use, and contribute to your project."
+import chalk from 'chalk'
+import { writeFile, readFile, readdir } from 'fs/promises'
+import { join } from 'path'
 
 const generateTemplate = async () => {
   try {
-    const files = await readdir(join(__dirname, 'templates'))
-    const template = getRandomTemplate(files)
+    const templates = await readdir(join('./', 'templates'))
+    const template = getTemplate(templates)
 
-    if(!template) {
+    if(!template) { 
       throw new Error('No templates available')
     }
 
-    const data = await readFile(join(__dirname, 'templates', template), { encoding: 'utf-8' })
-    await writeFile(join(__dirname, 'README.md'), data)
-  
-    console.log(successMsg)
-  } catch (error) {
-    console.log(`Error: ${error}`)
-  }
+    const data = await readFile(join('./', 'templates', template), { encoding: 'utf-8' })
+    await writeFile(join(process.cwd(), 'README.md'), data)
 
-  return true
+    successMsg()
+  } catch (error) {
+    console.log(`Error: ${error.message}`)
+  }
 }
 
-const getRandomTemplate = (templates) => {
-  if(!templates.length) {
-    return
-  }
-
-  if(templates.length < 2) {
-    return templates[0]
-  } 
-
+const getTemplate = (templates) => {
   const randIdx = Math.floor(Math.random() * templates.length)
   return templates[randIdx]
 }
 
-module.exports = generateTemplate
+const successMsg = () => {
+  console.log(`
+${chalk.italic.redBright("✨ README.md file created successfully ✨")}
+
+${chalk.white("Feel free to customize this template based on your project's specific details and structure.\nProviding comprehensive information in your README.md will make it easier for others to understand, use, and contribute to your project.")}
+
+${chalk.blueBright("🍕 Happy Coding 💯")}
+  `);
+}
+
+await (async () => {
+  try {
+    await generateTemplate()
+  } catch (error) {
+    console.log(error.message)
+  }
+})()

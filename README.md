@@ -1,53 +1,43 @@
-# Project Title
+# README.md Generator
 
-[Short project description and purpose]
-
-## Table of Contents
-
-- [Project Title](#project-title)
-  - [Table of Contents](#table-of-contents)
-  - [Introduction](#introduction)
-  - [Features](#features)
-  - [Getting Started](#getting-started)
-    - [Prerequisites](#prerequisites)
-    - [Installation](#installation)
-  - [Usage](#usage)
-  - [Contributing](#contributing)
-  - [License](#license)
-  - [Acknowledgments](#acknowledgments)
-
-## Introduction
-
-[Provide a brief introduction to your project. Include its purpose, main features, and any relevant background information.]
+The README.md Template Generator is a tool designed to streamline the process of creating clear and informative README.md files for your projects. A well-crafted README is essential for project documentation, enabling developers and users to understand, contribute to, and use your project effectively.
 
 ## Features
 
-[List key features of your project.]
-
-## Getting Started
-
-[Explain how to get started with your project. Include any necessary steps such as installing dependencies and setting up configurations.]
+- Customization: Quickly generate README templates with placeholders for project details.
+- Sections: Include commonly used sections such as Introduction, Features, Installation, Usage, and more.
+- Markdown: The generator produces Markdown, ensuring compatibility with popular hosting platforms like GitHub.
 
 ### Prerequisites
 
-[List any prerequisites that users need to have installed before they can use your project.]
+- node >= v20.9.0
+- npm >= 7.241.1
 
-### Installation
+## Installation
 
-[Provide step-by-step instructions on how to install your project. Include code snippets if necessary.]
+```sh
+  npm install readme.md-template-generator --global
+```
 
 ## Usage
 
-[Provide examples and instructions on how to use your project. Include code snippets, screenshots, or any other relevant information.]
+```sh
+  npm run readme
+```
+
+## Preview
+
+![preview_1](previews/preview.png)
 
 ## Contributing
 
-[Explain how others can contribute to your project. Include guidelines for submitting issues, feature requests, and pull requests.]
+Contributions, issues, feature request are welcome
 
 ## License
 
-[Specify the license under which your project is distributed. For example, MIT License, Apache License 2.0, etc.]
+This project is MIT licensed
 
-## Acknowledgments
+## Authors
 
-[List any acknowledgments, credits, or references to other projects or resources that inspired or helped your project.]
+- [Twitter](https://www.twitter.com/)
+- [Github](https://github.com/lsd1code)
