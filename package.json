@@ -1,6 +1,6 @@
 {
-  "name": "readme-template-generator",
-  "version": "1.0.0",
+  "name": "readme.md-templates-generator",
+  "version": "1.1.0",
   "description": "npm package for creating project README.md templates",
   "main": "index.js",
   "type": "module",

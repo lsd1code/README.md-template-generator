@@ -16,7 +16,7 @@ The README.md Template Generator is a tool designed to streamline the process of
 ## Installation
 
 ```sh
-  npm install readme.md-template-generator --global
+  npm install readme.md-templates-generator --global
 ```
 
 ## Usage
