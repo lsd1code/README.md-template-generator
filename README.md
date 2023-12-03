@@ -25,10 +25,6 @@ The README.md Template Generator is a tool designed to streamline the process of
   npm run readme
 ```
 
-## Preview
-
-![preview_1](previews/preview.png)
-
 ## Contributing
 
 Contributions, issues, feature request are welcome
