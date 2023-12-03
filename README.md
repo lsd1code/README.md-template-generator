@@ -22,7 +22,7 @@ The README.md Template Generator is a tool designed to streamline the process of
 ## Usage
 
 ```sh
-  npm run readme
+  npx readme-generate
 ```
 
 ## Contributing
